@@ -1,0 +1,125 @@
+/* patrick isola */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* Here is the normalize.css courtesy of Nicholas Gallagher (he's clever by the way). This section tries to 'normalize' the behaviour of various browsers */html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {	margin: 0;	padding: 0;	border: 0;	outline: 0;	font-weight: inherit;	font-style: inherit;	font-size: 100%;	font-family: inherit;	vertical-align: baseline;}/* remember to define focus styles! */:focus {	outline: 0;}body {	line-height: 1;	color: black;}ol, ul {	list-style: none;}/* tables still need 'cellspacing="0"' in the markup */table {	border-collapse: separate;	border-spacing: 0;}caption, th, td {	text-align: left;	font-weight: normal;}blockquote:before, blockquote:after,q:before, q:after {	content: "";}blockquote, q {	quotes: "" "";}/* self-clear floats - if you need them, this is my (current) favourite technique. More info: http://nicolasgallagher.com/micro-clearfix-hack/ *//* For modern browsers */.cf:before,.cf:after {    content:"";    display:table;}.cf:after {    clear:both;}/* For IE 6/7 (trigger hasLayout) */.cf {    zoom:1;}/* wrap url's */pre {	white-space: pre;           /* CSS 2.0 */	white-space: pre-wrap;      /* CSS 2.1 */	white-space: pre-line;      /* CSS 3.0 */	white-space: -pre-wrap;     /* Opera 4-6 */	white-space: -o-pre-wrap;   /* Opera 7 */	white-space: -moz-pre-wrap; /* Mozilla */	white-space: -hp-pre-wrap;  /* HP Printers */	word-wrap: break-word;      /* IE 5+ */	}/*fin des reset*//*font-face*/@font-face {    font-family: 'BitstreamVeraSansRoman';    src: url('../fonts/Vera-webfont.eot');    src: url('../fonts/Vera-webfont.eot?#iefix') format('embedded-opentype'),         url('../fonts/Vera-webfont.woff') format('woff'),         url('../fonts/Vera-webfont.ttf') format('truetype'),         url('../fonts/Vera-webfont.svg#BitstreamVeraSansRoman') format('svg');    font-weight: normal;    font-style: normal;}@font-face {    font-family: 'BebasNeueRegular';    src: url('../fonts/BebasNeue-webfont.eot');    src: url('../fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),         url('../fonts/BebasNeue-webfont.woff') format('woff'),         url('../fonts/BebasNeue-webfont.ttf') format('truetype'),         url('../fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');    font-weight: normal;    font-style: normal;}@font-face {    font-family: 'ColaborateThinRegular';    src: url('../fonts/ColabThi-webfont.eot');    src: url('../fonts/ColabThi-webfont.eot?#iefix') format('embedded-opentype'),         url('../fonts/ColabThi-webfont.woff') format('woff'),         url('../fonts/ColabThi-webfont.ttf') format('truetype'),         url('../fonts/ColabThi-webfont.svg#ColaborateThinRegular') format('svg');    font-weight: normal;    font-style: normal;}body {
+	background-color:#fff;
+}/*images à 100 %*/img,video {	max-width: 100%; height: auto;}video {	max-width: 100%;	height: auto;}
+
+/*	wrapper le conteneur div le plus extérieur*/* {transition: all 0.5s;}
+#wrapper {
+	margin-right: auto;
+	margin-left: auto;
+	width: 96%;	max-width: 1306px;	background-color: hsla(0, 0%, 100%, 0.61);}
+header {
+	width: 97.9166667%; /* 940 divisé par 960 */
+   	margin-right: auto;
+	margin-left: auto;
+	background: url(../img/drapeaux_haut.png) 0 top repeat-x;
+	padding-top: 50px;
+}
+
+nav {
+    display: table;    padding-bottom: 25px;
+    margin-top: 26px;
+    margin-left: -1.0416667%;
+    padding-right: 1.0416667%;
+    padding-left: 1.0416667%;
+    width: 97.9166667%; /* 940 divisé par 960 */	border-bottom: 4px double #bf1818;	background-image: url(../2567_RWDHTML5CSS3_ATWI_CODE/img/atwiNavBg.png);
+	background-repeat: repeat-x;
+}nav ul {	display: table-row;}nav ul li {
+	display: table-cell;
+	margin-right: 2.6595745%; /* 25 divisé par 960 */
+}nav ul li:last-child {	text-align: right;}nav ul li:first-child {	text-align: left;}
+nav ul li:nth-last-child(even) a {	color: #fe0208;}
+nav ul li a {
+	height: 42px;
+	line-height: 42px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'BebasNeueRegular';
+	font-size: 1.875em; /*30 div par 16*/
+	color: #000;	text-shadow: 0 1px 0 hsla(0, 0%, 100%, 0.75);	display: block;	}nav ul li a:hover {	transform: scale(1.3);}#content {
+    width: 72.7083333%; /* 698 divisé par 960 */
+    margin-top: 28px;
+    margin-right: 1.0416667%;	float: right;	height: 100%;}
+#content h1 {	text-transform: uppercase;	font: 6.375em BebasNeueRegular; /*102 div par 16*/	text-shadow: 0px 1px white,4px 4px 0px #dad7d7 ; /* 4 ÷ 102 */}#content h1 em {	display: block;	color: #504e4e;	text-shadow: none;	font: .352941176em/1.052631579em 'BitstreamVeraSansRoman';	font-weight: 400;	text-shadow: none;}#content h2 {	font-family: 'BebasNeueRegular';	font-size: 1.875em; /* 30px ÷ 16 */	text-transform: uppercase;	font-weight: 400;}#content h2 a {	color: #FD0105;}#content h3 {	font-family: 'BebasNeueRegular';	font-size: 1.2em;	color: #bfbfbf;	font-weight: 400;}#content p {	font-family: 'ColaborateThinRegular';	line-height: 40px;	color: #757474;	font-size: 1.875em; /* 24px ÷ 16 */}#content a {	text-decoration: none;	font: 0.75em 'BebasNeueRegular'; /*36 div par 16*/	background: -webkit-linear-gradient(90deg, #b01c20 0%, #f15c60 100%) 0 100% #b01c20;	background: -moz-linear-gradient(90deg, #b01c20 0%, #f15c60 100%) 0 100% #b01c20;	background: -ms-linear-gradient(90deg, #b01c20 0%, #f15c60 100%) 0 100% #b01c20;	background: linear-gradient(90deg, #b01c20 0%, #f15c60 100%) 0 100% #b01c20;	border-radius: 8px;	color: white;	padding: 15px;	float: left;	margin-top: 30px;	-moz-box-shadow: 5px 5px 5px hsla(0, 0%, 26.6667%, 0.8);	box-shadow: 5px 5px 5px hsla(0, 0%, 26.6667%, 0.8);	text-shadow: 0px 1px black;	border: 1px solid #bfbfbf;}#content a:hover {	border: 1px solid #000000;	color: #000000;	text-shadow: 0px 1px white;		transition: all 2s ease 0s;	}#content a span {	font-size: 1.3em;}/*barre latérale*/aside {	margin-top: 58px;	margin-right: 1.0416667%;	float: left;	border-right: 2px solid #9f3f3f;	width: 22.7083333%; /* 218 divisé par 960 */	background: pink;	background-image: -webkit-linear-gradient(90deg, #ffffff 0%, #e4e4e4 48.5%, #ffffff 100%);	background-image: -moz-linear-gradient(90deg, #ffffff 0%, #e4e4e4 48.5%, #ffffff 100%);	background-image: -ms-linear-gradient(90deg, #ffffff 0%, #e4e4e4 48.5%, #ffffff 100%);	background-image: linear-gradient(90deg, #ffffff 0%, #e4e4e4 48.5%, #ffffff 100%);}aside h1 {	margin-bottom: 20px;	font-family: 'BebasNeueRegular';	font-size: 1.875em; /* 30px ÷ 16 */	text-transform: uppercase;}footer {
+	width: 97.9166667%; /* 940 divisé par 960 */
+    float: left;
+    margin-top:20px;
+    margin-right: 1.0416667%;
+	margin-left: 1.0416667%;
+	clear: both;
+	background: url(../img/drapeaux.png) 0 bottom repeat-x;
+	color: #333;	text-align: center;}
+footer p {	margin-bottom: 38px;	text-align: center;	font-size: 1.125em /* 18px ÷ 16px */;	font-family: 'BebasNeueRegular';	text-transform: uppercase;	color: #757474;}
+header h1 {
+	font-size: 3em;
+	padding-bottom: 20px;
+	padding-top: 1.0416667%;
+}
+
+#logo {
+	display: block;
+	padding-top: 75px;
+	color: #0d0c0c;
+	text-transform: uppercase;
+	font-family: 'BebasNeueRegular';	font-size: 3em; /* 48 ÷ 16 = 3*/
+}.fiction {}.italie {}/*sideBlock*/.sideBlock h1 {	font-variant: small-caps;}.sideBlock img {	max-width: 45%;	box-shadow: 0px 3px 5px #444;	-ms-box-shadow:  0px 3px 5px #444;	-moz-box-shadow: 0px 3px 5px #444;	-webkit-box-shadow: 0px 3px 5px #444;}/*image accueil*/.oscarMain {	float: left;	margin-top: -28px;	width: 28.9398281%; /*698 divisé par 202*/	max-width: 202px;}/*formulaire*/#redemption {	width: 100%;	font-family: 'ColaborateThinRegular';	font-weight: 500;}#redemption hgroup {	margin-bottom: 20px;}#redemption div {	width: 100%;	margin-bottom: 15px;	float: left;}#redemption span#range {	float: left;	font-size: 3em;	width: 100%;	color: #b20303;	clear: both;	text-align: center;}#howYouRateThis,#yearOfCrime {	text-align: right;}#redemption legend {	font-style: italic;	color: #434242;	font-size: 1em;	margin-bottom: 20px;	float: left;	width: 100%;	background-color: rgba(244, 219, 219, 0.82);}#redemption fieldset {	border: 1px dotted #cccccc;	padding: 2%;	margin-bottom: 20px;	background: linear-gradient(to bottom, white 0%, #f6e6e6 100%) #ffffff;	border-radius: 4px;	box-shadow: 2px 2px 2px hsla(0, 0%, 26%, 0.4);	-moz-box-shadow: 2px 2px 2px hsla(0, 0%, 26%, 0.4);}#redemption label {	width: 40%;	float: left;}#redemption input {	height: 20px;	font-size: 1em;	width: 40%;	float: right;}#redemption textarea {	height: 60px;	font-size: 1em;	width: 40%;	float: right;}#redemption input#submit {	text-decoration: none;	height: 34px;	font:  1.25em 'BebasNeueRegular';	background: -webkit-linear-gradient(top, #c06867 0%, #ed9a9a 99.4%) #b01c20;	background: -moz-linear-gradient(top, #c06867 0%, #ed9a9a 99.4%) #b01c20;	background: -ms-linear-gradient(top, #c06867 0%, #ed9a9a 99.4%) #b01c20;	background: linear-gradient(to bottom, #c06867 0%, #ed9a9a 99.4%) #b01c20;	border-radius: 8px;	color: white;	float: right;	margin-bottom: 10px;	-moz-box-shadow: 5px 5px 5px rgba(105, 91, 91, 0.8);	box-shadow: 5px 5px 5px rgba(105, 91, 91, 0.8);	text-shadow: 0px 1px black;	border: 1px solid #bfbfbf;}.polyfill-important .input-range,.polyfill-important .step-controls {	float: right;}.polyfill-important .step-controls {	margin-right: -20px!important;}input, textarea, select {	border: 1px solid #333;	padding: 0.2em;	font-size: 1.1em;	background: #ffffff;	border-radius: 4px;	box-shadow: 2px 2px 5px #d9c9c9;	-moz-box-shadow: 2px 2px 5px #d9c9c9;}
+/* media query largeur max 768px */
+@media screen and (max-width: 768px)	{
+		#wrapper, header, footer, nav {
+		width: 768px;
+		margin: 0px;
+		}
+
+		#logo {
+		text-align: center;
+		}
+
+		nav {
+		text-align: center;
+		background-image: none;
+		border-top-color: #dedede;
+		border-top-style: double;
+		border-top-width: 4px;
+		padding-top: 20px;
+		}
+		nav ul li a {
+		background-color: #dedede;
+		line-height: 60px;
+		font-size: 40px;
+		}
+
+		#content, aside {
+		margin-top: 20px;
+		padding-right: 10px;
+		padding-left: 10px;
+		width: 728px;
+		}
+		.oscarMain {
+		margin-right: 30px;
+		margin-top: 0px;
+		width: 150px;
+		height: 394px;
+		float: left;
+		}
+		aside {
+		border-right: none;
+		border-top: 2px solid #e8e8e8;
+		padding-top: 20px;
+		margin-bottom: 20px;
+		}
+		.sideBlock {
+		width: 46%;
+		float: left;
+		}
+		.fiction {
+		margin-top: 0px;
+		margin-left: 50px;		}
+	}
+/*  média queries pour la navigation et le titre */@media screen and (min-width: 1001px) and (max-width: 1080px) {	 nav ul li a {	 	font-size: 1.4em;	 }}
+@media screen and (min-width: 805px) and (max-width: 1000px) {	 nav ul li a {	 	font-size: 1.25em;	 }}@media screen and (min-width: 769px) and (max-width: 804px) {	 nav ul li a {	 	font-size: 1.1em;	 }}

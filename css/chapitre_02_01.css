@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+/* patrick isola chapitre 01 01  */
+
+body {
+    background-color: #90a464;
+    color: #fff;
+}
+#menu > li {
+list-style-type: square;
+}
+
+#frangin h1 + p {
+background: rgba(255, 165, 0, 0.95);
+}
+
+img[class="vignette"][width="150"] {
+border: 10px solid green;
+}
+.lettrine p{
+width: 250px;
+}
+.lettrine p:first-letter {
+float: left;
+font: bold 3em Georgia, Times, serif;
+color: #900;
+padding: 3px 8px;
+margin: 5px 5px 0 0;
+border: 1px solid #900;
+}
+
+footer {
+background: linear-gradient(to top, white 0%, black 100%) #333;
+color:#fff;
+margin: 5px 5px 0 0;
+padding: 3px 8px;
+height: 190px;
+}
+
+#child ul {
+width: 300px;
+}
+#child ul li {
+border-top: 4px solid green;
+padding: 2px;
+}
+#child ul li:first-child {
+border-top: none;
+}
+
+input:focus {
+background-color: lightgreen;
+}
